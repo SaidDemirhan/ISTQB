@@ -83,4 +83,35 @@ Testi sonlandirma
 yönetim sürecleri: test pllanlama,izleme ve kontrol etme , tamamlama
 dinamik test süreci : test tasarimi ve gerceklestirilmesi, test ortaminin kurulmasi ve bakimi, test kosumu, testlerin raporlanmasi
 
+Yazilim Yasam Döngüsü:
+-Gereksinim Analizi
+-Sistem tasarimi
+-Program tasarimi
+-Program Kodlamasi
+-Birim testi
+-Yazilim Testi
+-Sistem Testi
+-Teslim
+-Sistemin Idamesi
+
+Selale (wetefall) Modeli:
+°Tanimlama(Gereksinim)
+°Detaylandirma(tasarim)
+°Gerceklestirme
+°Dogrulama
+°Bakim
+(°Yönetim)
+
+V Modeli(Gec /erken tasarim):
+Is gereksinimleri                       Kabul testleri
+ Proje gereksinimleri               Sistem tümlestirme Testleri
+  Sistem gereksinimleri         Sistem Testleri
+   Tasarim belirtimleri      Modül Tümlestirme Testleri
+    Kod                     Bilesen Testleri
+    
+Agile (CEVIK)  Metodu:
+Sprintler genellikle 2-4 Hafta sürer.
+
+
+
 
