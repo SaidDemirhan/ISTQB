@@ -28,31 +28,59 @@ Testin 7 ilkesi:
 6 Test icerige veya alana(context/domain) bagimlidir 
 7 Hata yoklugu yanilgisi
 
-2011=> test süreci;
-Planlama ve kontrol
-    - Test plani hazirlama
+test süreci;
+test Planlama
+    -Master Test plani hazirlama
     -strateji belirleme
     -yaklasima karar verme
     -Entry ve exit kriterlerinin belirlenmesi
+    #Test ana plani, kabul, sistem, yazilim, sisitem entegrasyon test plani
     
-Analiz ve tasarim
+Test izleme ve kontrol
+-tanimlanan metriklerin toplnmasi
+-test ilerlemesinin degerlendirilmesi
+-kabul kriterlerine uyginlugun degerlendirilmesi
+-testlerin yeterliligine kara verilmesi
+#test, test isleyis(progress), test özet raporlari, 
+
+Test Analizi (NE?)
+-test gereksinimleri belirlenmesi
+-test edilecek özelliklerin belirlenmesi
+#test gereksinimleri, tanimlanmis ve önceliklendirilmis test ögeleri
+
+Test tasarimi(NASIL?)
 -Test altyapisinin belirlenmesi
-- testlerin tasarlanamsi
-- test edilebilirligin belirlenmesi
+- testlerin ve seneryolarinin tasarlanamsi
+-Gereksinimler ile test seneryolarimiz arasinda izlenebilirligin kurulmasi
 -test ortaminin  tasarlanmasi
+#test durumlari,senaryolari,verilerive ortami
 
-Olustirma ve yürütme(UYGULAMA)
-- test senaryolarinincalistirilmasi
+Test Olusturma 
+- Test prosedürlerini gelistirmek ve öncelilklendirmek
+-test komut dopsyalari olusturmak
+-test takimlari olusturmak
+test verileri hazirlama
+-cift yönlü izlenebilirligi saglama(gereksinim ile test senaryolari arasinda)
+#test prosedürleri ve sirasi, test suitleri(takimlari), test kosturma takvimi
 
-Degerlendirme
--test  loglarinin ve rapoorlarinin incelenmesi
--test sonlandirma karari
--test projesi özetinin yönetime sunulmasi
+test kosturmasi(UYGULAMA)
+- test senaryolarinin calistirilmasi
+-elde edilen ve beklenen sonuclarin karsilastirilmasi
+-cikan hatalarin bildirilmesi
+-hatalar düzeltildikce yineleme ve onay testlerinin yapilmasi
+#test durumlari, hata raporlari, test raporlari
 
 Testi sonlandirma
--cikis kriterleinin dogrulugunun kontrolü
-istenilen sekilde dokumante edilmesi
+-raporlarin incelenmesi
+-cikis kriterleinin dogrulugunun kontrolü (test lead)
+-teste devam veya sonlandirma karari verme
+-testi arsivleme
+-tecrübelerle test sürecinin olgunlugunun arttirilmasi
+- istenilen sekilde dokumante edilmesi
+#test özet raporu, Iyilestirme raporlari
 
-2016=> organizasyonel sürecler: test politikasinin tanimlanmasi
+2018=> organizasyonel sürecler: test politikasinin tanimlanmasi
 yönetim sürecleri: test pllanlama,izleme ve kontrol etme , tamamlama
 dinamik test süreci : test tasarimi ve gerceklestirilmesi, test ortaminin kurulmasi ve bakimi, test kosumu, testlerin raporlanmasi
+
+
