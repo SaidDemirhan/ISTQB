@@ -25,4 +25,34 @@ Testin 7 ilkesi:
 3 Erken test 
 4 Hata(Defect) kümelenmesi (Clustering)
 5 Antibiyotik(pesticide) paradoksu (ayni test sürekli yapilirsa artik hata bulamamasidir.)
+6 Test icerige veya alana(context/domain) bagimlidir 
+7 Hata yoklugu yanilgisi
 
+2011=> test süreci;
+Planlama ve kontrol
+    - Test plani hazirlama
+    -strateji belirleme
+    -yaklasima karar verme
+    -Entry ve exit kriterlerinin belirlenmesi
+    
+Analiz ve tasarim
+-Test altyapisinin belirlenmesi
+- testlerin tasarlanamsi
+- test edilebilirligin belirlenmesi
+-test ortaminin  tasarlanmasi
+
+Olustirma ve yürütme(UYGULAMA)
+- test senaryolarinincalistirilmasi
+
+Degerlendirme
+-test  loglarinin ve rapoorlarinin incelenmesi
+-test sonlandirma karari
+-test projesi özetinin yönetime sunulmasi
+
+Testi sonlandirma
+-cikis kriterleinin dogrulugunun kontrolü
+istenilen sekilde dokumante edilmesi
+
+2016=> organizasyonel sürecler: test politikasinin tanimlanmasi
+yönetim sürecleri: test pllanlama,izleme ve kontrol etme , tamamlama
+dinamik test süreci : test tasarimi ve gerceklestirilmesi, test ortaminin kurulmasi ve bakimi, test kosumu, testlerin raporlanmasi
