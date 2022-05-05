@@ -1,0 +1,28 @@
+Yazilim: Kullanimve bakim rehberlerinden olusan bir rehberdir.
+Yazilim Projeleri mümkün olduguncaHATALARDAN ARINDIRILMIS olmalidir.
+
+Yazilim dogrulama(Verification) ve gecerleme/onaylama(validation): Gözden gecirme ve test ile olur.
+Ürün dogru mu gelistirildi? DOGRULAMA
+Dogru ürün mü gelistirildi? ONAYLAMA
+
+Yazilim testi: bir ürünü statik ve dinamik yöntemlerle beklenen davranisa UYMADIGI durumlari bulmma islemidir. (Hata bulma amacli)
+Statik: Kod calistirilmadan
+Dinamik: Kod calistirilarak
+
+Yanlis(Error): insan tarfindan
+Kusur/hata(Fault/defect/bug) : yazilimdaki yanlisin ortaya cikmasi( calistirilirsa ARIZA olur)
+Ariza(failure): Amacindan sapmasi
+
+Yazilim testinin amaclari:
+Yazilimdaki hatalarin varligini göstermeyi ve tekrarlanan hatalari önlemeyi
+meydana gelebilecek riskleri ayzaltmayi
+yazilim amacindaki sapmalari belirlemeyi
+kaliteyi arttirma
+
+Testin 7 ilkesi:
+1 Hatalarin varligini gösterir.
+2 Her seyi kapsayan (Exhaustive) test mümkün degildir
+3 Erken test 
+4 Hata(Defect) kümelenmesi (Clustering)
+5 Antibiyotik(pesticide) paradoksu (ayni test sürekli yapilirsa artik hata bulamamasidir.)
+
