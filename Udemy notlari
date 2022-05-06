@@ -289,3 +289,13 @@ Olay (Vakia) Yönetimi (Incident)
     Eger test sirasinda beklenen sonuclara uymayan sonuclar elde ediliyorsa buna vakia denir
     Raporlanmasi gerekir.
     Hata vakanin bir alt sinifidir. kod disinda gerceklesen olaylardir diyebiliriz.
+
+Hata önem dereceleri
+    Ölümcül: testin devam etmesi imkansiz
+    Kritik: test devam edebilir ama yazilim teslim edilemez
+    Büyük: test devam edebilir ama yazilim kullanildiginda telafisi zor sonuclar dogurabilir.
+    Orta: test deavm edebilir ama yazilim kullanildiginda telafisi mümkün olan sonuclar cikabilir.
+    Kücük: testler devam edebilir ortaya cikan hatalar önemsiz sayilabilir.
+    Kozmetik: yazilim üzerindeki görsel hatalardir. teste ve ürün teslimine engel degildir.
+    
+    
