@@ -2,22 +2,46 @@ Yazilim: Kullanimve bakim rehberlerinden olusan bir rehberdir.
 Yazilim Projeleri mümkün olduguncaHATALARDAN ARINDIRILMIS olmalidir.
 
 Yazilim dogrulama(Verification) ve gecerleme/onaylama(validation): Gözden gecirme ve test ile olur.
-Ürün dogru mu gelistirildi? DOGRULAMA
-Dogru ürün mü gelistirildi? ONAYLAMA
+    Ürün dogru mu gelistirildi? DOGRULAMA
+    Dogru ürün mü gelistirildi? ONAYLAMA
 
 Yazilim testi: bir ürünü statik ve dinamik yöntemlerle beklenen davranisa UYMADIGI durumlari bulmma islemidir. (Hata bulma amacli)
-Statik: Kod calistirilmadan
-Dinamik: Kod calistirilarak
+Statik Test: Kod calistirilmadan. Verification(dogrulama)
+    Erkenden hatayi tespit etmeye yarar
+        Gözden gecirmeler:
+            Herkes eksiklikleri söyleyebilir.
+            1 yönetimsel gözden gecirme
+                Plan, proje, takvim, maliyet, hedef
+                teknik detaylar olmaz
+            2 denetleme (audit)
+                standartlara ve sözlesmeye uyumun degerlendirilmesi
+                egitimli ve tarfsiz kisilerce
+            3 inceleme (Inspection)
+                standartlardan sapmalara neden olan anormalikllikleri bulma
+                tarafsiz kisi(moderatör) (kodu yazmayan) ve denk kisilerin (peer) katilimiyla
+            4 üzerinden gecme (Walk-trought)
+                gözden gecirme + hatalari bulma+ egitim
+                Kodu yazanin ekip üyelerine sunumu
+                amac ürünün iyilestirilmesi
+            Roller:
+                Moderatör
+                Kod, dokuman sahibi
+                Gözden geciriciler
+                Katip (Scriber)
+        Statik kod analizleri:
+            amac yazilim calistirilmadan hatalari ortaya cikarmak ve bu sayede istenilen kaliteyi yakalamktir
+            
+Dinamik Test: Kod calistirilarak
 
 Yanlis(Error): insan tarfindan
 Kusur/hata(Fault/defect/bug) : yazilimdaki yanlisin ortaya cikmasi( calistirilirsa ARIZA olur)
-Ariza(failure): Amacindan sapmasi
+Ariza(failure): Amacindan sapmasi-müsteri
 
 Yazilim testinin amaclari:
-Yazilimdaki hatalarin varligini göstermeyi ve tekrarlanan hatalari önlemeyi
-meydana gelebilecek riskleri ayzaltmayi
-yazilim amacindaki sapmalari belirlemeyi
-kaliteyi arttirma
+    Yazilimdaki hatalarin varligini göstermeyi ve tekrarlanan hatalari önlemeyi
+    meydana gelebilecek riskleri ayzaltmayi
+    yazilim amacindaki sapmalari belirlemeyi
+    kaliteyi arttirma
 
 Testin 7 ilkesi:
 1 Hatalarin varligini gösterir.
@@ -44,8 +68,8 @@ Test izleme ve kontrol
 #test, test isleyis(progress), test özet raporlari, 
 
 Test Analizi (NE?)
--test gereksinimleri belirlenmesi
--test edilecek özelliklerin belirlenmesi
+-test gereksinimleri belirlenmesi ve degerlendirilmesi
+-test edilecek özelliklerin belirlenmesi (sistemin test edilebilirliginin degerlendirilmesi)
 #test gereksinimleri, tanimlanmis ve önceliklendirilmis test ögeleri
 
 Test tasarimi(NASIL?)
@@ -100,7 +124,7 @@ Selale (wetefall) Modeli:
 °Gerceklestirme
 °Dogrulama
 °Bakim
-(°Yönetim)
+(°Yönetim- hepsini kapsar )
 
 V Modeli(Gec /erken tasarim):
 Is gereksinimleri                       Kabul testleri
@@ -111,6 +135,38 @@ Is gereksinimleri                       Kabul testleri
     
 Agile (CEVIK)  Metodu:
 Sprintler genellikle 2-4 Hafta sürer.
+Sprint: Discover, Design, Develop, Test döngüsünden olusur
+
+Tüm gereksinimler PRODUCT BACKLOG da toplanir -sahibi PRODUCT OWNER dir. Paydaslarin isteklerini buraya yazar.
+
+Yazilim test seviyeleri:
+1 Birim testler(Unit): dev ler tarafindan yapilir. WHITEBOX
+2 Yazilim testleri:tester tarafindan yapilir. BLACKBOX
+    Tümlestirme testleri:
+    en az iki uygulamanin birbiriyle iletisim kurabilirligini test eder
+    Birim entegrasyon ve Sistem Entegrasyon seklinde iki seviyesi vardir.
+    Bigbang stratejisiyle tüm mödüller eklenip hepsinin birden test edilmesidir.
+    Artimsal satrateji Asagidan yukariyya veya yukaridan asagiya test edilmesidir.
+3 Sistem testleri: tester. Sistem gereksinimlerini dogrulamak icin. BLACKBOX - 
+    Performans, Kullanilabilirlik, Güvenilirlik, Güvenlik, Stres testleri
+    tüm siteme uygulanir ve son asamada gerceklestirilir.
+    +Penetirasyon (Sizma-güvenlik) testleri
+4 Kabul testleri: tester. Müsteri gereksinimlerini dogrulamak icin. BLACKBOX
+    Kullanici kabul testi
+    Operasyonel kabul testi
+    Uyumluluk testi
+        Kanuni uyumluluk
+        Web tarayici uyumluluk
+    Alfa testi
+        yazilim gelistirme tarafinda sirketin test ortaminda yapilir
+    Beta testi
+        Pazardan geri bildirim almak icin, kabul testine girmeden önce, müsteri tarafinda yapilan demo denilebilir.
+
+
+
+
+
+
 
 
 
