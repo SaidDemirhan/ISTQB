@@ -274,3 +274,18 @@ Test Eforunu etkileyen Faktörler
     bilgi kalitesi
     Test araclarinin uygunluk durumu
     ...
+Test yaklasimi; bir proje icin test stratejilerinin uygulanmasidir.
+
+Test Stratejisi:
+    test faaliyetlerini nasil yerine getirecegim.
+    risk bazli, gereksinim bazli, (ANALITIK yaklasim)
+    tecrübeye dayali, konrol listesi bazli (Metodik)
+    IEEE 829 uyumlu, cevik test (Sürec veya standart uyumlu)
+    kasif tabanli (Dinamik)
+    Alan uzmanlari rehberliginde(istisari)
+    tekrar kullanima dayali yüksek test otomasyonlu(regresyon hassasiyetli yaklasimlar)
+    
+Olay (Vakia) Yönetimi (Incident)
+    Eger test sirasinda beklenen sonuclara uymayan sonuclar elde ediliyorsa buna vakia denir
+    Raporlanmasi gerekir.
+    Hata vakanin bir alt sinifidir. kod disinda gerceklesen olaylardir diyebiliriz.
