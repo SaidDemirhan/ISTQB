@@ -8,7 +8,7 @@ Yazilim dogrulama(Verification) ve gecerleme/onaylama(validation): Gözden gecir
 Yazilim testi: bir ürünü statik ve dinamik yöntemlerle beklenen davranisa UYMADIGI durumlari bulmma islemidir. (Hata bulma amacli)
 Statik Test: Kod calistirilmadan. Verification(dogrulama)
     Erkenden hatayi tespit etmeye yarar
-        Gözden gecirmeler:
+        Gözden gecirmeler: (hedef: Üründeki kusurlari tanimlamak)
             Herkes eksiklikleri söyleyebilir.
             1 yönetimsel gözden gecirme
                 Plan, proje, takvim, maliyet, hedef
@@ -184,18 +184,93 @@ Test Tasarimi Teknikleri:
                 büyüktür kücüktür kücük esittir hatalarini bulma
                 sinirin bir lti ve sinirin bir üstü mutlaka yazilmalidir. 20 ise 19 20 21
             3 Karar tablosu testi (Decision table testing)
+                ad soyad evet ise gönder butonu calissin
             4 Durum gecis testi(State Transition Testing)
+                belli kurallar dahilinde bir durumdan digerine gecmesi (hatali pin kodu -karta el koy, dogru pin kodu-hesaba eris)
             5 Kulanim senaryosu testi(use case testing)
+                Kullanici ile sistem arasindaki islemleri gösteren senaryolar (atm den para cekme islemi)
+                Kullanim senaryolari, sistem ve kabul testlerinin tasarlanmasinda test senaryolari icin temel olusturur.
+                
     B White Box test teknikleri:
         Her türlü ic yapisina göre test edilir. yazilimcilar %99
         Birim, Birim tümlestirme, Kod kapsama
+        Kod calistirilarak test edilir, özellikle looplarda farkli denmeler yapilmalidir.
+        Amaci:
+            1 Test kapsaminin ölcülebilir olmasi
+            2 Test tasariminin kaliteli yapilmasi
+        Cesitleri:
+            1 Ifade kapsama testi (Statement Coverage Testing) -Satir kapsami, segment kapsami
+                Kod satir satir calistirilmis olmali
+                Kodun ne kadarinin calistigini ve calismadigini tespit eder.
+                STATEMENT COVERAGE: Koddaki ifadelerin calisma oranini bulmak icin kullanilan bir birimdir.
+            2 Karar Kapsama Testi (Decision Coverage Testing) -Branch coverage, all-edges coverage
+                Branclarda problem olmadigini tespit eder. (branch olarak if statement deki alternatif durumlar)
+            3 Code Coverage
+                Kodun hengi parcalarinin calistirildigini gösterir.
+            4 Lineal Code Sequence And Jump (LCSAJ)
+                Kod kapsami ile dal(karar) kapsaminin birlestirilmis jalidir.
     C Deneyim temelli test teknikleri (experience based)
         tecrüblerden yola cikarak test edilmesi
         Düsük rirk ve zaman baskisi varsa
+        Cesitleri:
+        1 Error Guessing (Hata tahminleme)
+            Deneme yanilma 
+            Ilk test olarak kullanilmamalidir. -tamamlayicidir, en uc noktalar bulunabilir
+            Kisisel deneyim ön plandadir. -önceden benzerini test etmis, hatalari koklayan
+            Method yok
+            Eski defect haritasi kullanilabilir
+            Test script (automatisierung) yoktur
+        2 Kesif temlli testler
+            Kod yazimi devam ederken yapilir, amac bir seyleri kesfetmek,ögrenmek (bi verin bakalim ne ile karsilasacagimizi bilelim vb)
+            Dokuman yok,Script yok
+            Diger test teknikleri kullanilabilir. Sinir deger, Esdeger aralik testi gibi.
+            
 
+Yazilan koddaki her birimin basarili bir sekilde sonlanmai seklinde yazilan senaryoya ANA AKIS SENARYOSU denir.
 
+Test Organizasyonunda Görevler:
+1 Test Lideri/Yöneticisi
+    Test Stratejisini olusturur, koordine eder,testleri planlar(günceller), baslatir sonuclari gözlemler, cikis kriterlerini kontrol eder.
+    Kurumun test politikasini olusturur. Testin ilerleyisini kalttesini degerlendirir, uygun metrikleri belirler
+    Otomasyon kullanimina karar verir. Test araclarini secer, uzmanlari egitir.
+    Test özet raporlarini hazirlar.
+    
+2 Test Uzmani
+    Test analizi,tasarimi cesitleri ve otomasyonunda uzmandir.
+    Test planlarini gözden gecirir ve hazirlanmasina katki saglar
+    Gereksinimleri analiz eder gözden gecirir degerlendirir.
+    Test gereksinimlerini olusturur.
+    Test Ortamini hazirlar
+    Test verisini hazirlar.
+    Test yönetimmve izleme araclarini kullanir.
+    
+KISA-KISA
+Test durumlari test belirtimleri cikartilirken üretilir
+Hata ayiklama faaliyetini (DEBUGGING) yazilimi gelistirenlere aittiir(dev)
+Etki analizi: Regresyon testinin ne kadar olacagini belirlemek icin sistemdeki bir degisikligin etkisini degerlendirir.
+Konfigürasyon (versiyon) yönetimi test planlanmasi sirasinda tanimlanir.
 
-
-
-
-
+Yazilim testi Doümantasyonu Standardi (IEEE Std 829-1998):
+    1 Test plani
+        sürekli deevam eder, farkli olanlar olabilir
+        Giris kriterleri>test>Cikis kriterleri
+    2 Test tasarim Dokumani
+    3 Test durumu dokumani
+    4 test prosedürü dokunmani
+    5 test ögesi iletim raporu
+    6 Test Logu
+    7 Test Vakia Raporu
+    8 Test Özet Raporu
+    
+    Test Tahminlemesi:
+    1 Metrik bazli yaklasim 
+        Önceki projelerden elde edilen verilerle yapilan tahmin        # top-down ve bottom-up
+    2 Uzman bazli yaklasim
+        Uzman kisilerin tecrübelerine dayalinarak yapilan tahmin
+        
+Test Eforunu etkileyen Faktörler
+    Kullanilan test stratejisi ve yaklasimi
+    dokumantasyon
+    bilgi kalitesi
+    Test araclarinin uygunluk durumu
+    ...
