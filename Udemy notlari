@@ -30,7 +30,16 @@ Statik Test: Kod calistirilmadan. Verification(dogrulama)
                 Katip (Scriber)
         Statik kod analizleri:
             amac yazilim calistirilmadan hatalari ortaya cikarmak ve bu sayede istenilen kaliteyi yakalamktir
-            
+            Kontrol akis analizleri - ulasilamayan kod var mi
+            veri kullanim analizleri - iki kez tanimlanmis degisken veya tanimlanip da kullanilmayan degisken var mi
+            Arayüz analizleri - 
+            Bilgi akis analizleri - Cikis degiskenleri bagimliliklari kontrol edilir
+            Yol analizleri - yollardaki yardimci ifadeler
+            veri akis analizi (data flow anaysis)
+            Kodlama standarti analizi (Coding standart analysis)
+            Isaretci analizleri (pointer analiysis)
+            yanlis yol budama analizi (False Path Pruning)
+            fonksiyon deger analizi(function Value Analysis)
 Dinamik Test: Kod calistirilarak
 
 Yanlis(Error): insan tarfindan
@@ -162,8 +171,27 @@ Yazilim test seviyeleri:
     Beta testi
         Pazardan geri bildirim almak icin, kabul testine girmeden önce, müsteri tarafinda yapilan demo denilebilir.
 
-
-
+Test Tasarimi Teknikleri:
+    A Black box test teknikleri:(gereksinime dayali)
+        yazilimin ic yapisi bilinmez
+        kullanici girdisine göre ciktisinin kontrol edilmesidir. 
+        islevsel veya islevsel olmayabilir.
+        Her seviyede kullanilabilir.(yazilim sistem, kabul)
+        islevler tanimli olmalidir.
+            1 Esdeger aralik testi (equivalance partitioning)
+                Gecerli sinif, gecersiz sinif, bebek cocuk yetiskin 3<cocuk<18
+            2 Sinir deger analizi (boundary value)
+                büyüktür kücüktür kücük esittir hatalarini bulma
+                sinirin bir lti ve sinirin bir üstü mutlaka yazilmalidir. 20 ise 19 20 21
+            3 Karar tablosu testi (Decision table testing)
+            4 Durum gecis testi(State Transition Testing)
+            5 Kulanim senaryosu testi(use case testing)
+    B White Box test teknikleri:
+        Her türlü ic yapisina göre test edilir. yazilimcilar %99
+        Birim, Birim tümlestirme, Kod kapsama
+    C Deneyim temelli test teknikleri (experience based)
+        tecrüblerden yola cikarak test edilmesi
+        Düsük rirk ve zaman baskisi varsa
 
 
 
