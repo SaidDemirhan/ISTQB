@@ -1,0 +1,35 @@
+ISTQB Sinav Calismasi
+
+Testin amacı:  test nesnesinin beklendiği gibi çalışıp çalışmadığını doğrulamaktadır.
+Test etme ve hata ayıklama arasındaki fark: dinamik testler; kusurlardan kaynaklanan arızaları gösterir, hata ayıklama; hataların kaynağı olan kusurları ortadan kaldırır.
+Hepsi veya üretim sırasında keşfedilen bir Arıza için en yaygın durum: iki nokta kullanıcı bir iletişim kutusunda bir seçenek ve ilerlediğinde ürün çöktü.  
+Aynı seslerin uzun süre tekrarlanması yeni kusurlar bulmaya engeldir.
+Kalite güvencesi açısından test: düşük yazılım kalitesi riskini azaltır. 
+Tescil edilebilirlik için test esasının değerlendirilmesi test analizinin bir parçasıdır.
+Test paketi: komut dosyalarından oluşur (suite)
+Test komut dosyası: talimatlardan oluşur (script)
+ test durumu: beklenen sonuçları içerir (case)
+test tüzüğü: test faaliyetlerinin belgelenmesidir. (charter)
+- Kullanıcı kabul testi sırasında Beyaz Kutu testi: Tüm akışları kapsayip kapsamadığını kontrol ederek
+- Bileşen testi(Comparing component testing) için test senaryoları genellikle birleşen spesifikasyonlarindan, tasarım spesifikasyonlarından veya veri modellerinden türetilirken, sistem testi için test senaryoları genellikle gereksinim spesifikasyonlarından veya kullanım senaryolarından türetilir.
+- Regresyon testinin amacı istenmeyen yan etkileri tespit etmektir.
+- Doğrulama(confirmation) testinin amacı orijinal kusurun düzeltilip düzeltemediğini kontrol etmektir. 
+Artımlı geliştirme modeli: (Incremental development model) : Gereksinimlerin tanımlanması, yazılımların tasarlanması ve test edilmesi her aşamada sistemin bir parçasının eklendiği aşamalarda yapılır. 
+Bakim testi(machintance): Platform değişikliği Düzeltmeler ve arşivlenen verilerin getirilebilirligi
+ Formal rewiewde: Author, Moderatör, rewiew leader, rewiewer, scribe yer alir
+Formal rewiewin  amacı:  giriş kriterlerinin karşılandığının tanımlanması ve doğrulanması
+Kurallara ve kontrol listesine dayalı inceleme(rewiew) en iyi bakım (inspection) ile olur.
+Statik test kusurları tespit etmenin ve ortadan kaldırmanın en ucuz yoludur 
+Kontrol listesinde dayalı test(checklist-based test): Bir ürünün doğrulanması gereken bir dizi kuralı veya kriteri kullandığı deneyime dayalı bir test tekniği 
+Kara Kutu testi: resmi gereksinimlere dayalı bir teknik
+Statement coverage in kapsami: Kaynak kodda yürütülen ifadelerin yüzdesi olan bir ölçümdür 
+Ifade kapsamı ile karar kapsamı arasındaki ilişki (relationship-statement coverage): %100 karar kapsamı aynı zamanda %100 beyan kapsamını da garanti eder. 
+Keşif testi(exploratory testing): benzer uygulamalar ve teknolojiler hakkında yeterli bilgiye sahip test uzmanları mevcut olduğunda uygulanabilir
+Tester, testleri otomatikleştirir, test yöneticisi test faaliyetlerini planlar, kontrol ve koordine eder.
+Yürütülen test sırasında yürütülen test senaryolarının yüzdesi en yararli olur.
+Test planlamasini BÜTCE SINIRLAMASI ciddi oranda etkiler.
+tipik cikis kriterleri: kullanilabilirlik önlemleri (reliability measures), test kapsami (test coverage), Arizanin giderilmesi ve kalan risklerle ilgili güvenlik önlemleri. 
+test özet raporunda hedefler tanimlanmaz.
+
+
+
