@@ -298,4 +298,20 @@ Hata önem dereceleri
     Kücük: testler devam edebilir ortaya cikan hatalar önemsiz sayilabilir.
     Kozmetik: yazilim üzerindeki görsel hatalardir. teste ve ürün teslimine engel degildir.
     
+    Extra:
+    Testi yakalama ve yeniden oynatma (record and play) araclarinin kullanilmasi REGRESYON TESTLERINDE uygundur.
+    IEEE 829 standardi test plani sablanunda test gereksinimleri(belirtimleri) yoktur. (öge, görev, ortam vardir)
+    Kara kutu test teknigi olmayan syntax testidir. (olanlar: esit deger araliklarina aayirma, sinir deger analiy´zi, durum gecis testi)
+    Beta testi Musteri tarafinda yapilan testtir.
+    islevsel testler gereksinimlerin dogrulandigi testlerdir.
+    islevsel olmayan testler; performan ve kullanilibilirlik gibi sistemin kalitesinin test edilmesi
+    Test tamamlama kriterlerinin amaci (test planinin icindedir) testlerin ne zaman durdurulacagini belirlemek tir.
+    Statik analizlerle (kod calistirlmadan) bellek sizintilari bulunamaz. (dinamik sistem araclariyla bulunur.) -Kod incelemesidir.
+    Hata tahminleme Formal teknikler kullanildiktan sonra kullanilmasi tevsiye edilir.
+    Kullanicilarin yazilimda hata bulmasinin sebebi YETERSIZ YAZILIM ve YETERSIZ TESTLER dir.
+    Entegrasyon stratejisi: bigbang, asagidan yukariya, yukaridan asagiya olarak uygulanir. (tasarim tabanli degil) 
+    IEEE 829 standardi test plani sablanunda test plani belgesinde kalite planlari yer almaz 
+        (test edilmeyecek özellikler, test ortami özellikleri, zaman cizelgeleri ve bitis tarihleri vardir.)
+    Performans testinde iyilesme testi diye bir kavram yoktur.    
+    
     
