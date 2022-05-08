@@ -2,6 +2,12 @@ test dokümantasyonu IEEE 29119-3
 
 Statik analizde BELLEK SIZINTISI bulunamaz (Dinamaik analiz ile bulunur.)
 
+statik analiz:
+  Test edilen yazılımın çalıştırılmasını gerektiren dinamik testlerin aksine
+  statik testler, yazılımın veya diğer çalışma ürünlerinin manuel incelenmesine 
+  (gözden geçirmelere) veya kodun veya diğer çalışma ürünlerinin araç kullanılarak 
+  değerlendirilmesine (statik analizlere) dayanır
+
 Kara kutu test teknigi örnekleri: 
   Denklik Paylarına Ayırma, Sınır Değer Analizi
   Karar Tablosu Testleri
@@ -37,8 +43,52 @@ Risk ne kadar yüksekse Proje o kadar tehdit altindadir.
 
 Bagimsiz testin amaci:
 
+Alfa testi: 
+  yazılım geliştiren kuruluşun tesislerinde, sadece yazılım geliştirme ekibi tarafından değil,
+  potansiyel veya mevcut müşteriler ve/veya operatörler veya bağımsız bir test ekibi tarafından
+  gerçekleştirilir
 
+tecrübeye dayalı test: 
+  test senaryoları, test uzmanının beceri ve sezgilerinden ve benzer uygulama 
+  ve teknolojilerdeki tecrübelerinden elde edilen testler.
   
+entegrasyon testi: 
+  birimler veya sistemler arasındaki etkileşimlere odaklanır
   
+test seviyesi olan testler:
+  entegrasyon testi, birim testi, sistem testi, kabul testi
+
+test planinda:
+  “test hedeflerini yerine getirme” yaklaşımını içerir. 
+  Testlerin kapsamı, hedefleri ve risklerinin belirlenmesi 
+  Testlerdeki genel yaklaşımın belirlenmesi 
+ 	Test faaliyetlerinin yazılım yaşam döngüsü faaliyetlerine entegre edilmesi 
+ 	Test gözetimi ve kontrolü için metriklerin seçilmesi 
+ 	Test faaliyetlerinin bütçelendirilmesi 
+ 	Test dokümantasyonunun detay seviyesinin ve yapısının belirlenmesi 
   
-  
+Kod kapsama metriğinin amacı:
+
+V modeli test uzmanları için iyi bir yol göstericidir çünkü….. 
+   Test sürecini yazılım geliştirme sürecinin tamamına entegre ederek erken test prensibini 
+   uygular. Ayrıca, V-modeli, karşılık gelen her yazılım geliştirme aşaması ile ilgili test
+   seviyeleri içerir; bu da erken testi desteklemektedir.
+
+V modelinin basamaklari
+  Testlerin tasarlanmasi
+    is gereksiimleri
+    proje gerweksinimleri
+    sistem gereksinimleri
+    tasarim belirtimleri
+    kod
+  Testlerin kosturulmasi
+    Bilesen testleri
+    modul tümlestirme testleri
+    sistem testleri
+    sistem tümlestirme testleri
+    kabul testleri
+    
+ Birim testinde: 
+    Test edilen birim için gerekli olan girdileri sağlayacak diğer birimlerin yerine 
+    o metotların koçanları (stub) kullanılır.
+    Böylece diğer birimdeki olası bir hatanın test edilen birimi etkilemesi engellenir.
