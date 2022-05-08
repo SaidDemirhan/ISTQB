@@ -1,6 +1,7 @@
 test dokümantasyonu IEEE 29119-3 
 
-Statik analizde BELLEK SIZINTISI bulunamaz (Dinamaik analiz ile bulunur.)
+Statik analizde BELLEK SIZINTISI (memory Leak) bulunamaz (Dinamaik analiz ile bulunur.)#
+   Low Decisoin coverage(düsük karar kapsami) ve High Coupling(yüksek baglasim) bulunamaz, 
 
 statik analiz:
   Test edilen yazılımın çalıştırılmasını gerektiren dinamik testlerin aksine
@@ -88,7 +89,116 @@ V modelinin basamaklari
     sistem tümlestirme testleri
     kabul testleri
     
+V model de: Her test seviyesinin, o seviyeye özgü test hedefleri vardır
+    
  Birim testinde: 
     Test edilen birim için gerekli olan girdileri sağlayacak diğer birimlerin yerine 
     o metotların koçanları (stub) kullanılır.
     Böylece diğer birimdeki olası bir hatanın test edilen birimi etkilemesi engellenir.
+
+Decision table testing-Karar tablosu testi black boox tex DEGILDIR. 
+  ad soyad yazili degil ise gönder butonu aktif olmasin.
+  
+Ifade kapsama testi (Statement Coverage Testing) -Satir kapsami, segment kapsami
+  Kod satir satir calistirilmis olmali
+     Kodun ne kadarinin calistigini ve calismadigini tespit eder.
+     STATEMENT COVERAGE: Koddaki ifadelerin calisma oranini bulmak icin kullanilan bir birimdir.
+
+Karar Kapsama Testi (Decision Coverage Testing) -Branch coverage, all-edges coverage
+   Branclarda problem olmadigini tespit eder. 
+     (branch olarak if statement deki alternatif durumlar)
+     
+Mandotory(yazici) zorunlu oldugu rewiew ler:
+  walktrouth(üzerinden gecme), teknik review(teknik gözden gecirme), inspection (teftis) dur
+
+burndown tabloları (yapılacak işler tablosu):
+  çevik yazılım geliştirmede, metrik bazlı yaklaşımın örneklerindendir.
+Defect removal model(hata giderme modelleri):
+  Şelale yazılım geliştirme metodolojisi gibi sıralı metodolojileri kullanan projelerde, 
+  hata giderme modelleri metrik bazlı yaklaşımın örnekleridir.
+Wideband Delphi:
+  uzman bazli tahminleme teknigi
+poker planlama:  
+ekip üyelerinin kendi deneyimlerine dayanarak yapılacak iş için gereken çalışmayı 
+tahmin ettikleri bir tekniktir
+
+Author(yazar) in liderlik ettigi review teknigi WALKTROUGHT
+
+Formal review lwerdeki hatalari AUTHOR un düzeltmesi beklenir.
+
+Sistem testleri: tester. Sistem gereksinimlerini dogrulamak icin. BLACKBOX - 
+    Performans, Kullanilabilirlik, Güvenilirlik, Güvenlik, Stres testleri
+    tüm siteme uygulanir ve son asamada gerceklestirilir.
+    
+METRIKLER:
+  teftiş süreci de dâhil olmak üzere tüm yazılım geliştirme sürecini 
+  iyileştirmek için kullanılır.
+  
+Yanlis(Error): insan tarfindan
+Kusur/hata(Fault/defect/bug) : yazilimdaki yanlisin ortaya cikmasi( calistirilirsa ARIZA olur)
+Ariza(failure): Amacindan sapmasi-müsteri
+
+Test ilerleme raporları ve test özet raporları genellikle aşağıdakileri içerir:
+• Gerçekleştirilen testlerin özeti
+• Bir test dönemi sırasında neler olduğuna dair bilgiler
+• Test faaliyetlerinin zaman çizelgesindeki, süresindeki veya çalışma miktarındaki sapmalar 
+da dâhil olmak üzere plandan sapmalar
+• Çıkış kriterleri veya Tamamlandı tanımına göre testlerin ve ürün kalitesinin durumu
+• İlerlemeyi engellemiş veya engellemeye devam eden faktörler
+• Hata metrikleri, test senaryoları, test kapsamı, faaliyet ilerlemesi ve kaynak tüketimi.
+• Kalan riskler
+• Üretilen yeniden kullanılabilir test çalışma ürünleri
+
+Artımlı(incremental) yazılım geliştirme modeli:
+parçalar halinde gereksinimleri belirlemeyi, 
+sistemi tasarlamayı, oluşturmayı ve test etmeyi içerir; bu, yazılımın özelliklerinin adım adım
+artması anlamına gelir. Bu artışlarda ele alınacak yazılım özelliklerinin boyutu değişiklik 
+gösterebilir, bazı modellerde büyük parçalar, bazılarında ise daha küçük parçalar bulunur. 
+Ele alınacak bir yazılım özelliği, yeni bir sorgu seçeneği veya kullanıcı arayüzü ekranında 
+yapılan tek bir değişiklik kadar küçük olabilir.
+
+Testin 7 ilkesi:
+1 Hatalarin varligini gösterir.
+2 Her seyi kapsayan (Exhaustive) test mümkün degildir
+3 Erken test 
+4 Hata(Defect) kümelenmesi (Clustering)
+5 Antibiyotik(pesticide) paradoksu (ayni test sürekli yapilirsa artik hata bulamamasidir.)
+6 Test icerige veya alana(context/domain) bagimlidir 
+7 Hata yoklugu yanilgisi
+
+Hataların kök nedenleri:(ROOT CAUSES)
+  hataların oluşmasına sebep olan en baştaki eylemler veya koşullardır. Hatalar, kök nedenlerini
+  belirlemek için analiz edilebilir, böylece gelecekte benzer hataların ortaya çıkma olasılığının
+  azaltılması hedeflenir. En belirgin kök nedenlere odaklanan kök neden analizi, gelecekte önemli
+  sayıda hatanın ortaya çıkmasını önleyen süreç iyileştirmelerini sağlayabilir.
+  
+Testlerde hangi METRIK(ölcüm)lerin kullanilacagi TEST PLANNING de belirlrnir.
+  
+Test Case ler Test Design(test dizayn) da Test Conditionslar(Test koşulları) 
+kullanılarak oluşturulur.
+
+Karar Testi:
+  deneyime dayali bir test DEGILDIR. Yapisal özellikleri test eder.
+  
+Tester in görevi:Test planlarını inceler ve katkıda bulunur
+
+Test esası ve test çalışma ürünleri arasındaki izlenebilirlik (traceability)
+  İki veya daha fazla iş ürünü arasında bir ilişkinin kurulma derecesi.
+  
+Statik Test ile bulunan yaygin hatalar sunlardir:
+➔ Gereksinim hatalari: tutarsizliklar, belirsizliler, CELISKILER, cikarmalar, yanlisliklar, fazlaliklar
+➔ Tasarim Hatalari: Verimsiz algoritmalar veya veritabani yapilari, yüksek baglasim, DÜSÜK UYUM
+➔ Kodlama Hatalari: (deger atanmamis degiskenler, TANIMLANMIS fakat hic kullanilmamis 
+desiskenler, ulasilamayan kod, tekrarlanan kod)
+➔ Standartlardan sapmalar: kodlama standartlarina bagli kalmama
+➔ Hatali arayüz gereksinimleri (cagiran sistem ile cagrilan sistem tarafindan kullnilan ölcüm 
+birimlerinin farkli olmasi)
+➔ Güvenlik aciklari: arabellek asimlarina karsi duyarlilik
+
+Scribe nin görevleri(yazman)
+--her bir gözden geçirme faaliyeti sırasında bulunan bulguları bir araya getirir ve sıraya koyar 
+• Gözden geçirme toplantısında belirlenen yeni potansiyel hataları, açık noktaları ve kararları kaydeder
+
+Yazilim dogrulama(Verification) ve gecerleme/onaylama(validation): Gözden gecirme ve test ile olur.
+    Ürün dogru mu gelistirildi? DOGRULAMA -statik
+    Dogru ürün mü gelistirildi? ONAYLAMA -dinamik
