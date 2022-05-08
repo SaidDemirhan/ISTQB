@@ -1,5 +1,5 @@
-Yazilim: Kullanimve bakim rehberlerinden olusan bir rehberdir.
-Yazilim Projeleri mümkün olduguncaHATALARDAN ARINDIRILMIS olmalidir.
+Yazilim: Kullanim ve bakim rehberlerinden olusan bir rehberdir.
+Yazilim Projeleri mümkün oldugunca HATALARDAN ARINDIRILMIS olmalidir.
 
 Yazilim dogrulama(Verification) ve gecerleme/onaylama(validation): Gözden gecirme ve test ile olur.
     Ürün dogru mu gelistirildi? DOGRULAMA -statik
@@ -7,15 +7,15 @@ Yazilim dogrulama(Verification) ve gecerleme/onaylama(validation): Gözden gecir
 
 Yazilim testi: bir ürünü statik ve dinamik yöntemlerle beklenen davranisa UYMADIGI durumlari bulmma islemidir. (Hata bulma amacli)
 Statik Test: Kod calistirilmadan. Verification(dogrulama)
-    Erkenden hatayi tespit etmeye yarar
+    Erkenden hatayi tespit etmeye yarar.
         Gözden gecirmeler: (hedef: Üründeki kusurlari tanimlamak)
             Herkes eksiklikleri söyleyebilir.
             1 yönetimsel gözden gecirme
-                Plan, proje, takvim, maliyet, hedef
-                teknik detaylar olmaz
+                +Plan, proje, takvim, maliyet, hedef
+                -teknik detaylar olmaz
             2 denetleme (audit)
                 standartlara ve sözlesmeye uyumun degerlendirilmesi
-                egitimli ve tarfsiz kisilerce
+                egitimli ve tarafsiz kisilerce
             3 inceleme (Inspection)
                 standartlardan sapmalara neden olan anormalikllikleri bulma
                 tarafsiz kisi(moderatör) (kodu yazmayan) ve denk kisilerin (peer) katilimiyla
@@ -70,10 +70,10 @@ test Planlama
     #Test ana plani, kabul, sistem, yazilim, sistem entegrasyon test plani
     
 Test izleme ve kontrol
--tanimlanan metriklerin toplnmasi
+-tanimlanan metriklerin toplanmasi
 -test ilerlemesinin degerlendirilmesi
--kabul kriterlerine uyginlugun degerlendirilmesi
--testlerin yeterliligine kara verilmesi
+-kabul kriterlerine uygunlugun degerlendirilmesi
+-testlerin yeterliligine karar verilmesi
 #test, test isleyis(progress), test özet raporlari, 
 
 Test Analizi (NE?)
@@ -90,7 +90,7 @@ Test tasarimi(NASIL?)
 
 Test Olusturma 
 - Test prosedürlerini gelistirmek ve öncelilklendirmek
--test komut dopsyalari olusturmak
+-test komut dosyalari olusturmak
 -test takimlari olusturmak
 test verileri hazirlama
 -cift yönlü izlenebilirligi saglama(gereksinim ile test senaryolari arasinda)
@@ -113,7 +113,7 @@ Testi sonlandirma
 #test özet raporu, Iyilestirme raporlari
 
 2018=> organizasyonel sürecler: test politikasinin tanimlanmasi
-yönetim sürecleri: test pllanlama,izleme ve kontrol etme , tamamlama
+yönetim sürecleri: test planlama,izleme ve kontrol etme , tamamlama
 dinamik test süreci : test tasarimi ve gerceklestirilmesi, test ortaminin kurulmasi ve bakimi, test kosumu, testlerin raporlanmasi
 
 Yazilim Yasam Döngüsü:
@@ -127,7 +127,7 @@ Yazilim Yasam Döngüsü:
 -Teslim
 -Sistemin Idamesi
 
-Selale (wetefall) Modeli:
+Selale (weterfall) Modeli:
 °Tanimlama(Gereksinim)
 °Detaylandirma(tasarim)
 °Gerceklestirme
@@ -155,10 +155,10 @@ Yazilim test seviyeleri:
     en az iki uygulamanin birbiriyle iletisim kurabilirligini test eder
     Birim entegrasyon ve Sistem Entegrasyon seklinde iki seviyesi vardir.
     Bigbang stratejisiyle tüm mödüller eklenip hepsinin birden test edilmesidir.
-    Artimsal satrateji Asagidan yukariyya veya yukaridan asagiya test edilmesidir.
+    Artimsal strateji Asagidan yukariya veya yukaridan asagiya test edilmesidir.
 3 Sistem testleri: tester. Sistem gereksinimlerini dogrulamak icin. BLACKBOX - 
     Performans, Kullanilabilirlik, Güvenilirlik, Güvenlik, Stres testleri
-    tüm siteme uygulanir ve son asamada gerceklestirilir.
+    tüm sisteme uygulanir ve son asamada gerceklestirilir.
     +Penetirasyon (Sizma-güvenlik) testleri
 4 Kabul testleri: tester. Müsteri gereksinimlerini dogrulamak icin. BLACKBOX
     Kullanici kabul testi
@@ -194,7 +194,7 @@ Test Tasarimi Teknikleri:
     B White Box test teknikleri:
         Her türlü ic yapisina göre test edilir. yazilimcilar %99
         Birim, Birim tümlestirme, Kod kapsama
-        Kod calistirilarak test edilir, özellikle looplarda farkli denmeler yapilmalidir.
+        Kod calistirilarak test edilir, özellikle looplarda farkli denemeler yapilmalidir.
         Amaci:
             1 Test kapsaminin ölcülebilir olmasi
             2 Test tasariminin kaliteli yapilmasi
@@ -221,13 +221,13 @@ Test Tasarimi Teknikleri:
             Method yok
             Eski defect haritasi kullanilabilir
             Test script (automatisierung) yoktur
-        2 Kesif temlli testler
+        2 Kesif temelli testler
             Kod yazimi devam ederken yapilir, amac bir seyleri kesfetmek,ögrenmek (bi verin bakalim ne ile karsilasacagimizi bilelim vb)
             Dokuman yok,Script yok
             Diger test teknikleri kullanilabilir. Sinir deger, Esdeger aralik testi gibi.
             
 
-Yazilan koddaki her birimin basarili bir sekilde sonlanmai seklinde yazilan senaryoya ANA AKIS SENARYOSU denir.
+Yazilan koddaki her birimin basarili bir sekilde sonlanmasi seklinde yazilan senaryoya ANA AKIS SENARYOSU denir.
 
 Test Organizasyonunda Görevler:
 1 Test Lideri/Yöneticisi
@@ -253,7 +253,7 @@ Konfigürasyon (versiyon) yönetimi test planlanmasi sirasinda tanimlanir.
 
 Yazilim testi Doümantasyonu Standardi (IEEE Std 829-1998):
     1 Test plani
-        sürekli deevam eder, farkli olanlar olabilir
+        sürekli devam eder, farkli olanlar olabilir
         Giris kriterleri>test>Cikis kriterleri
     2 Test tasarim Dokumani
     3 Test durumu dokumani
