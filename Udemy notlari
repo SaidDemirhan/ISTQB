@@ -2,8 +2,8 @@ Yazilim: Kullanimve bakim rehberlerinden olusan bir rehberdir.
 Yazilim Projeleri mümkün olduguncaHATALARDAN ARINDIRILMIS olmalidir.
 
 Yazilim dogrulama(Verification) ve gecerleme/onaylama(validation): Gözden gecirme ve test ile olur.
-    Ürün dogru mu gelistirildi? DOGRULAMA
-    Dogru ürün mü gelistirildi? ONAYLAMA
+    Ürün dogru mu gelistirildi? DOGRULAMA -statik
+    Dogru ürün mü gelistirildi? ONAYLAMA -dinamik
 
 Yazilim testi: bir ürünü statik ve dinamik yöntemlerle beklenen davranisa UYMADIGI durumlari bulmma islemidir. (Hata bulma amacli)
 Statik Test: Kod calistirilmadan. Verification(dogrulama)
@@ -67,7 +67,7 @@ test Planlama
     -strateji belirleme
     -yaklasima karar verme
     -Entry ve exit kriterlerinin belirlenmesi
-    #Test ana plani, kabul, sistem, yazilim, sisitem entegrasyon test plani
+    #Test ana plani, kabul, sistem, yazilim, sistem entegrasyon test plani
     
 Test izleme ve kontrol
 -tanimlanan metriklerin toplnmasi
@@ -204,7 +204,8 @@ Test Tasarimi Teknikleri:
                 Kodun ne kadarinin calistigini ve calismadigini tespit eder.
                 STATEMENT COVERAGE: Koddaki ifadelerin calisma oranini bulmak icin kullanilan bir birimdir.
             2 Karar Kapsama Testi (Decision Coverage Testing) -Branch coverage, all-edges coverage
-                Branclarda problem olmadigini tespit eder. (branch olarak if statement deki alternatif durumlar)
+                Branclarda problem olmadigini tespit eder. 
+                (branch olarak if statement deki alternatif durumlar)
             3 Code Coverage
                 Kodun hengi parcalarinin calistirildigini gösterir.
             4 Lineal Code Sequence And Jump (LCSAJ)
@@ -279,11 +280,14 @@ Test yaklasimi; bir proje icin test stratejilerinin uygulanmasidir.
 Test Stratejisi:
     test faaliyetlerini nasil yerine getirecegim.
     risk bazli, gereksinim bazli, (ANALITIK yaklasim)
+    ürünün bazı özelliklerinin modellenmesine dayanarak tasarlanır(model bazli-model based)
     tecrübeye dayali, konrol listesi bazli (Metodik)
     IEEE 829 uyumlu, cevik test (Sürec veya standart uyumlu)
-    kasif tabanli (Dinamik)
-    Alan uzmanlari rehberliginde(istisari)
+    kesif tabanli (Dinamik-tepkisel-reactiv)
+        önceden planlamak yerine test sirasindaki tepkilerle sekillenir.
+    Alan uzmanlari rehberliginde(istisari- yönlendirmeli-directed)
     tekrar kullanima dayali yüksek test otomasyonlu(regresyon hassasiyetli yaklasimlar)
+    
     
 Olay (Vakia) Yönetimi (Incident)
     Eger test sirasinda beklenen sonuclara uymayan sonuclar elde ediliyorsa buna vakia denir
