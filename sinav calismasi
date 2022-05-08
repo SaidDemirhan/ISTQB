@@ -1,0 +1,44 @@
+test dokümantasyonu IEEE 29119-3 
+
+Statik analizde BELLEK SIZINTISI bulunamaz (Dinamaik analiz ile bulunur.)
+
+Kara kutu test teknigi örnekleri: 
+  Denklik Paylarına Ayırma, Sınır Değer Analizi
+  Karar Tablosu Testleri
+  Durum Geçişi Testleri
+  Kullanım Senaryosu Testleri
+
+Yasal mevzuat kabul testinin amaci:
+  Söleşmeye veya yasal düzenlemelere uyumluluk sağladığına dair güven oluşturmaktır.
+  
+Risk tabanlı yaklaşım:
+  Ürün risklerinin seviyelerini düşürmek ve projenin ilk aşamasından başlayarak 
+  paydaşları durumdan haberdar etmek amaçlı bir test yaklaşımı.  
+  
+Regrasyon testi
+  Kodun bir bölümünde yapılan bir değişikliğin (bir düzeltme veya başka bir değişiklik 
+  çeşidi olabilir) kazara kodun diğer bölümlerinin (aynı birim içinde, aynı sistemin diğer 
+  birimlerinde ve hatta diğer sistemlerde) davranışını olumsuz bir şekilde etkilemesi olasıdır
+
+Bir testin beklenen ciktisi HATA METRIKLERINDE tanimlanmalidir.
+
+Tekrar testinin amaci:
+
+Konfigürasyon yönetimi:
+  Yazılım birleşeninin entegre bir sistem dahilinde yönetimidir.
+  
+Tekrar test etmenin amaci:
+   Test yürütüldüğünde her defasında aynı sonuçların üretilebilme durumunun görülmesidir.
+  
+Sistem testine baslayabilmek icin:
+  Test koşumu zaman aralıkları – mutabık kalınmış gereksinimler – test planı.. 
+  
+Risk ne kadar yüksekse Proje o kadar tehdit altindadir.
+
+Bagimsiz testin amaci:
+
+
+  
+  
+  
+  
