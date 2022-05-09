@@ -243,7 +243,7 @@ Test Organizasyonunda Görevler:
     Test gereksinimlerini olusturur.
     Test Ortamini hazirlar
     Test verisini hazirlar.
-    Test yönetimmve izleme araclarini kullanir.
+    Test yönetim ve izleme araclarini kullanir.
     
 KISA-KISA
 Test durumlari test belirtimleri cikartilirken üretilir
@@ -265,7 +265,7 @@ Yazilim testi Doümantasyonu Standardi (IEEE Std 829-1998):
     
     Test Tahminlemesi:
     1 Metrik bazli yaklasim 
-        Önceki projelerden elde edilen verilerle yapilan tahmin        # top-down ve bottom-up
+        Önceki projelerden elde edilen verilerle yapilan tahmin        # top-down ve bottom-up, big bang
     2 Uzman bazli yaklasim
         Uzman kisilerin tecrübelerine dayalinarak yapilan tahmin
         
@@ -275,6 +275,7 @@ Test Eforunu etkileyen Faktörler
     bilgi kalitesi
     Test araclarinin uygunluk durumu
     ...
+    
 Test yaklasimi; bir proje icin test stratejilerinin uygulanmasidir.
 
 Test Stratejisi:
@@ -292,7 +293,7 @@ Test Stratejisi:
 Olay (Vakia) Yönetimi (Incident)
     Eger test sirasinda beklenen sonuclara uymayan sonuclar elde ediliyorsa buna vakia denir
     Raporlanmasi gerekir.
-    Hata vakanin bir alt sinifidir. kod disinda gerceklesen olaylardir diyebiliriz.
+    Hata vakanin bir alt sinifidir. kod disinda gerceklesen olaylar da dahildir diyebiliriz.
 
 Hata önem dereceleri
     Ölümcül: testin devam etmesi imkansiz
@@ -305,13 +306,13 @@ Hata önem dereceleri
     Extra:
     Testi yakalama ve yeniden oynatma (record and play) araclarinin kullanilmasi REGRESYON TESTLERINDE uygundur.
     IEEE 829 standardi test plani sablanunda test gereksinimleri(belirtimleri) yoktur. (öge, görev, ortam vardir)
-    Kara kutu test teknigi olmayan syntax testidir. (olanlar: esit deger araliklarina aayirma, sinir deger analiy´zi, durum gecis testi)
+    Kara kutu test teknigi olmayan syntax testidir. (olanlar: esit deger araliklarina ayirma, sinir deger analizi, durum gecis testi)
     Beta testi Musteri tarafinda yapilan testtir.
-    islevsel testler gereksinimlerin dogrulandigi testlerdir.
-    islevsel olmayan testler; performan ve kullanilibilirlik gibi sistemin kalitesinin test edilmesi
-    Test tamamlama kriterlerinin amaci (test planinin icindedir) testlerin ne zaman durdurulacagini belirlemek tir.
+    islevsel testler; gereksinimlerin dogrulandigi testlerdir.
+    islevsel olmayan testler; performans ve kullanilibilirlik gibi sistemin kalitesinin test edilmesi
+    Test tamamlama kriterlerinin amaci (test planinin icindedir) testlerin ne zaman durdurulacagini belirlemektir.
     Statik analizlerle (kod calistirlmadan) bellek sizintilari bulunamaz. (dinamik sistem araclariyla bulunur.) -Kod incelemesidir.
-    Hata tahminleme Formal teknikler kullanildiktan sonra kullanilmasi tevsiye edilir.
+    Hata tahminleme Formal teknikler kullanildiktan sonra kullanilmasi tavsiye edilir.
     Kullanicilarin yazilimda hata bulmasinin sebebi YETERSIZ YAZILIM ve YETERSIZ TESTLER dir.
     Entegrasyon stratejisi: bigbang, asagidan yukariya, yukaridan asagiya olarak uygulanir. (tasarim tabanli degil) 
     IEEE 829 standardi test plani sablanunda test plani belgesinde kalite planlari yer almaz 
