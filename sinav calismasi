@@ -1,7 +1,7 @@
 test dokümantasyonu IEEE 29119-3 
 
 Statik analizde BELLEK SIZINTISI (memory Leak) bulunamaz (Dinamaik analiz ile bulunur.)
-   Low Decisoin coverage(düsük karar kapsami) ve High Coupling(yüksek baglasim) bulunamaz, 
+   Low Decisoin coverage(düsük karar kapsami) 
 
 statik analiz:
   yazılımın veya diğer çalışma ürünlerinin manuel incelenmesine 
