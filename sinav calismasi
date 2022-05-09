@@ -1,16 +1,16 @@
 test dokümantasyonu IEEE 29119-3 
 
-Statik analizde BELLEK SIZINTISI (memory Leak) bulunamaz (Dinamaik analiz ile bulunur.)#
+Statik analizde BELLEK SIZINTISI (memory Leak) bulunamaz (Dinamaik analiz ile bulunur.)
    Low Decisoin coverage(düsük karar kapsami) ve High Coupling(yüksek baglasim) bulunamaz, 
 
 statik analiz:
-  Test edilen yazılımın çalıştırılmasını gerektiren dinamik testlerin aksine
-  statik testler, yazılımın veya diğer çalışma ürünlerinin manuel incelenmesine 
+  yazılımın veya diğer çalışma ürünlerinin manuel incelenmesine 
   (gözden geçirmelere) veya kodun veya diğer çalışma ürünlerinin araç kullanılarak 
-  değerlendirilmesine (statik analizlere) dayanır
+  değerlendirilmesine dayanır.
 
 Kara kutu test teknigi örnekleri: 
-  Denklik Paylarına Ayırma, Sınır Değer Analizi
+  Denklik Paylarına Ayırma, 
+  Sınır Değer Analizi
   Karar Tablosu Testleri
   Durum Geçişi Testleri
   Kullanım Senaryosu Testleri
@@ -75,7 +75,7 @@ V modeli test uzmanları için iyi bir yol göstericidir çünkü…..
    uygular. Ayrıca, V-modeli, karşılık gelen her yazılım geliştirme aşaması ile ilgili test
    seviyeleri içerir; bu da erken testi desteklemektedir.
 
-V modelinin basamaklari
+V modelinin basamaklari:
   Testlerin tasarlanmasi
     is gereksiimleri
     proje gerweksinimleri
@@ -96,7 +96,7 @@ V model de: Her test seviyesinin, o seviyeye özgü test hedefleri vardır
     o metotların koçanları (stub) kullanılır.
     Böylece diğer birimdeki olası bir hatanın test edilen birimi etkilemesi engellenir.
 
-Decision table testing-Karar tablosu testi black boox tex DEGILDIR. 
+Decision table testing-Karar tablosu testi black box tex DEGILDIR. 
   ad soyad yazili degil ise gönder butonu aktif olmasin.
   
 Ifade kapsama testi (Statement Coverage Testing) -Satir kapsami, segment kapsami
@@ -108,7 +108,7 @@ Karar Kapsama Testi (Decision Coverage Testing) -Branch coverage, all-edges cove
    Branclarda problem olmadigini tespit eder. 
      (branch olarak if statement deki alternatif durumlar)
      
-Mandotory(yazici) zorunlu oldugu rewiew ler:
+Scribe(yazici) zorunlu oldugu rewiew ler:
   walktrouth(üzerinden gecme), teknik review(teknik gözden gecirme), inspection (teftis) dur
 
 burndown tabloları (yapılacak işler tablosu):
@@ -124,7 +124,7 @@ tahmin ettikleri bir tekniktir
 
 Author(yazar) in liderlik ettigi review teknigi WALKTROUGHT
 
-Formal review lwerdeki hatalari AUTHOR un düzeltmesi beklenir.
+Formal review lerdeki hatalari AUTHOR un düzeltmesi beklenir.
 
 Sistem testleri: tester. Sistem gereksinimlerini dogrulamak icin. BLACKBOX - 
     Performans, Kullanilabilirlik, Güvenilirlik, Güvenlik, Stres testleri
@@ -189,9 +189,9 @@ Statik Test ile bulunan yaygin hatalar sunlardir:
 ➔ Gereksinim hatalari: tutarsizliklar, belirsizliler, CELISKILER, cikarmalar, yanlisliklar, fazlaliklar
 ➔ Tasarim Hatalari: Verimsiz algoritmalar veya veritabani yapilari, yüksek baglasim, DÜSÜK UYUM
 ➔ Kodlama Hatalari: (deger atanmamis degiskenler, TANIMLANMIS fakat hic kullanilmamis 
-desiskenler, ulasilamayan kod, tekrarlanan kod)
+degiskenler, ulasilamayan kod, tekrarlanan kod)
 ➔ Standartlardan sapmalar: kodlama standartlarina bagli kalmama
-➔ Hatali arayüz gereksinimleri (cagiran sistem ile cagrilan sistem tarafindan kullnilan ölcüm 
+➔ Hatali arayüz gereksinimleri (cagiran sistem ile cagrilan sistem tarafindan kullanilan ölcüm 
 birimlerinin farkli olmasi)
 ➔ Güvenlik aciklari: arabellek asimlarina karsi duyarlilik
 
